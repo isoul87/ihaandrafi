@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- font alexbrush -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cinzel:wght@400..900&family=Croissant+One&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a0931be220.js" crossorigin="anonymous"></script>
+  <title>Undangan Pernikahan</title>
+  <link rel="stylesheet" href="/src/output.css">
+</head>
+<body class="bg-gradient-to-b from-pink-50 to-white text-gray-800 font-sans">
+
+<nav class="fixed bottom-0 left-0 right-0 bg-white shadow-[0_-2px_10px_rgba(0,0,0,0.1)] z-50">
+  <div class="flex justify-around max-w-xl mx-auto">
+    <a href="#" class="flex flex-col items-center justify-center text-center text-pink-600 p-3 w-1/4">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mb-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+      </svg>
+      <span class="text-xs font-medium">Home</span>
+    </a>
+    <a href="#mempelai" class="flex flex-col items-center justify-center text-center text-gray-500 hover:text-pink-600 p-3 w-1/4 transition">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mb-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+      </svg>
+      <span class="text-xs font-medium">Mempelai</span>
+    </a>
+    <a href="#acara" class="flex flex-col items-center justify-center text-center text-gray-500 hover:text-pink-600 p-3 w-1/4 transition">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mb-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+      </svg>
+      <span class="text-xs font-medium">Acara</span>
+    </a>
+    <a href="#rsvp" class="flex flex-col items-center justify-center text-center text-gray-500 hover:text-pink-600 p-3 w-1/4 transition">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mb-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+      </svg>
+      <span class="text-xs font-medium">RSVP</span>
+    </a>
+  </div>
+</nav>
+
+  <!-- Hero Section -->
+  <section class="h-screen flex flex-col justify-center items-center text-center px-4">
+    <h1 class="text-4xl md:text-6xl font-bold text-pink-700 mb-4 font-cross">Undangan Pernikahan</h1>
+    <p class="text-lg md:text-2xl mb-6">Kami mengundang Anda untuk hadir dalam pernikahan</p>
+    <h2 class="text-5xl md:text-7xl font-semibold text-gray-900 font-script">Iha & Rafi</h2>
+    <p class="mt-4 text-lg md:text-xl">Jum'at, 3 Oktober 2025</p>
+    <a href="#acara" class="mt-8 px-6 py-3 bg-pink-600 text-white rounded-full shadow-lg hover:bg-pink-700 transition">Lihat Detail Acara</a>
+    
+    <div id="countdown" class="flex justify-center gap-4 md:gap-8 mt-6 text-xl">
+      <div><span id="days" class="font-bold text-3xl">00</span><br>Hari</div>
+      <div><span id="hours" class="font-bold text-3xl">00</span><br>Jam</div>
+      <div><span id="minutes" class="font-bold text-3xl">00</span><br>Menit</div>
+      <div><span id="seconds" class="font-bold text-3xl">00</span><br>Detik</div>
+    </div>
+
+  </section>
+  
+
+  <!-- Mempelai -->
+  <section class="py-16 bg-white" id="mempelai">
+    <div class="max-w-5xl mx-auto px-4 text-center">
+      <div>
+        <h1 class="text-2xl font-bold text-pink-700 mb-12 font-cross">Assalamualaikum Wr Wb</h1>
+        <p class="text-lg md:text-2xl mb-6">Maha Suci Engkau yang telah menciptakan makhluknya berpasangan - pasangan Ya Tuhan, jika engkau memperkenalkan Putra - putri kami:</p>
+      </div>
+      <h2 class="text-3xl font-bold text-pink-700 mb-12 font-cross">Mempelai</h2>
+      <div class="grid md:grid-cols-2 gap-10">
+        <div class="flex flex-col items-center">
+          <img src="src/img/nikah.jpg" alt="Mempelai Pria" class="rounded-full shadow-lg w-48 h-48 object-cover mb-4">
+          <h3 class="text-2xl font-bold font-cinzel">Rafi</h3>
+          <p class="text-gray-600">Putra Bpk. Ahmad & Ibu Siti</p>
+        </div>
+        <div class="flex flex-col items-center">
+          <h3 class="text-2xl font-bold font-cinzel">Iha</h3>
+          <p class="text-gray-600">Putri Bpk. Budi & Ibu Ani</p>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- Detail Acara -->
+  <section class="py-16 bg-pink-50" id="acara">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold text-pink-700 mb-8 font-cross">Detail Acara</h2>
+      <div class="bg-white shadow-lg rounded-2xl p-8">
+          <h3 class="text-2xl font-semibold mb-4 font-cross">Akad Nikah</h3>
+          <p class="text-lg font-bold text-pink-700">Minggu, 27 Oktober 2025 </p>
+          <p>Pukul 11:00 WIB - Selesai</p>
+          <p>Dsn. Druju Kec. Pagak Kab. Malang</p>
+        <div class="my-6 border-t border-gray-300"></div>
+          <h3 class="text-2xl font-semibold mb-4 font-cross">Resepsi</h3>
+          <p class="text-lg font-bold text-pink-700">Minggu, 27 Oktober 2025 </p>
+          <p>Pukul 11:00 WIB - Selesai<</p>
+          <p>Dsn. Druju Kec. Pagak Kab. Malang</p>
+      </div>
+    </div>
+  </section>
+
+  
+
+  <!-- Maps -->
+  <section class="py-16 bg-white" id="lokasi">
+    <div class="max-w-5xl mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold text-pink-700 mb-8 font-cross">Lokasi</h2>
+      <button><a href="https://maps.app.goo.gl/pxQT5pbeUWPKpSF87"><span><i class="fa-chisel fa-regular fa-location-dot"></i></span> Lihat Lokasi</a></button>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer class="py-6 text-center bg-white border-t">
+    <p class="text-gray-600">© 2025 Naufal & Aisyah. Dibuat dengan ❤️ dan TailwindCSS</p>
+  </footer>
+  <script src="dist/main.js"></script>
+</body>
+</html>

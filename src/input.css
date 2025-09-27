@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* di index.css */
+@font-face {
+  font-family: 'Alex Brush';
+  src: url('/src/font/AlexBrush-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  /* ... */
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
