@@ -1,4 +1,6 @@
-
+AOS.init();
+  
+  
   const targetDate = new Date("Oct 3, 2025 08:00:00").getTime();
 
   const countdown = setInterval(function() {

@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- font alexbrush -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cinzel:wght@400..900&family=Croissant+One&display=swap" rel="stylesheet">
    <link
@@ -23,7 +25,7 @@
 </head>
 <body class="bg-gradient-to-b from-pink-50 to-white text-gray-800 font-sans">
 
-<nav class="fixed bottom-0 left-0 right-0 bg-white shadow-[0_-2px_10px_rgba(0,0,0,0.1)] z-50">
+<nav class="fixed bottom-0 left-0 right-0 bg-white shadow-[0_-2px_10px_rgba(0,0,0,0.1)] z-50" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1000">
   <div class="flex justify-around max-w-xl mx-auto">
     <a href="#" class="flex flex-col items-center justify-center text-center text-pink-600 p-3 w-1/4">
       <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mb-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -53,14 +55,16 @@
 </nav>
 
   <!-- Hero Section -->
-  <section class="h-screen flex flex-col justify-center items-center text-center px-4">
-    <h1 class="text-4xl md:text-6xl font-bold text-pink-700 mb-4 font-cross">Undangan Pernikahan</h1>
-    <p class="text-lg md:text-2xl mb-6">Kami mengundang Anda untuk hadir dalam pernikahan</p>
-    <h2 class="text-5xl md:text-7xl font-semibold text-gray-900 font-script">Iha & Rafi</h2>
-    <p class="mt-4 text-lg md:text-xl">Jum'at, 3 Oktober 2025</p>
-    <a href="#acara" class="mt-8 px-6 py-3 bg-pink-600 font-bold text-white rounded-full shadow-lg hover:bg-pink-700 transition">Lihat Detail Acara</a>
+  <section class="h-screen flex flex-col justify-center items-center text-center px-4" data-aos="fade-up">
+    <h1 class="text-4xl md:text-6xl font-bold text-pink-700 mb-4 font-cross" data-aos="zoom-in" data-aos-delay="1000" data-aos-duration="1000">Undangan Pernikahan</h1>
+    <div data-aos="zoom-in" data-aos-delay="1500" data-aos-duration="1000">
+      <p class="text-lg md:text-2xl mb-6">Kami mengundang Anda untuk hadir dalam pernikahan</p>
+      <h2 class="text-5xl md:text-7xl font-semibold text-gray-900 font-script">Iha & Rafi</h2>
+      <p class="mt-4 mb-10 text-lg md:text-xl">Jum'at, 3 Oktober 2025</p>
+      <a href="#acara" class="mt-8 px-6 py-3 bg-pink-600 font-bold text-white rounded-full shadow-lg hover:bg-pink-700 transition">Lihat Detail Acara</a>
+    </div>
     
-    <div id="countdown" class="bg-white/20 backdrop-blur-md rounded-3xl p-6 md:p-8 flex justify-center gap-7 md:gap-8 mt-6 text-xl shadow-lg border border-white/30">
+    <div id="countdown" class="bg-white/20 backdrop-blur-md rounded-3xl p-6 md:p-8 flex justify-center gap-7 md:gap-8 mt-6 text-xl shadow-lg border border-white/30" data-aos="fade-up" data-aos-delay="1500" data-aos-duration="1000">
     <div><span id="days" class="font-bold text-3xl">00</span><br>Hari</div>
     <div><span id="hours" class="font-bold text-3xl">00</span><br>Jam</div>
     <div><span id="minutes" class="font-bold text-3xl">00</span><br>Menit</div>
@@ -74,11 +78,11 @@
   <section class="py-16 bg-white" id="mempelai">
     <div class="max-w-5xl mx-auto px-4 text-center">
       <div>
-        <h1 class="text-2xl font-bold text-pink-700 mb-12 font-cross">Assalamualaikum Wr. Wb.</h1>
-        <p class="text-lg md:text-2xl mb-6">Maha Suci Engkau yang telah menciptakan makhluknya berpasangan - pasangan Ya Tuhan, jika engkau memperkenalkan Putra - putri kami:</p>
+        <h1 class="text-2xl font-bold text-pink-700 mb-12 font-cross" data-aos="zoom-in" data-aos-delay="500" data-aos-duration="1000">Assalamualaikum Wr. Wb.</h1>
+        <p class="text-lg md:text-2xl mb-6" data-aos="zoom-in" data-aos-delay="700" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Maha Suci Engkau yang telah menciptakan makhluknya berpasangan - pasangan Ya Tuhan, jika engkau memperkenalkan Putra - putri kami:</p>
       </div>
-      <h2 class="text-3xl font-bold text-pink-700 mb-12 font-cross">Mempelai</h2>
-      <div class="grid mb-12 gap-10">
+      <h2 class="text-3xl font-bold text-pink-700 mb-12 font-cross"data-aos="zoom-in" data-aos-delay="1000" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Mempelai</h2>
+      <div class="grid mb-12 gap-10" data-aos="fade-up" data-aos-delay="700" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">
         <div class="flex flex-col items-center">
           <img src="src/img/nikah.jpg" alt="Mempelai Pria" class="rounded-full shadow-lg w-48 h-48 object-cover mb-4">
           <h3 class="text-2xl font-bold font-cinzel">Rafi</h3>
@@ -89,7 +93,7 @@
           <p class="text-gray-600">Putri Bpk. Gunawan & Ibu Sukarti</p>
         </div>
       </div>
-      <div>
+      <div data-aos="zoom-in" data-aos-delay="1000" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">
         <p class="text-lg md:text-2xl mb-6">Untuk mengikuti sunnah Rasul mu dalam rangka membentuk keluarga yang sakinah, mawaddah, warrohmah</p>
       </div>
       
@@ -99,8 +103,8 @@
   <!-- Detail Acara -->
   <section class="py-16 bg-pink-50" id="acara">
     <div class="max-w-4xl mx-auto px-4 text-center">
-      <h2 class="text-3xl font-bold text-pink-700 mb-8 font-cross">Detail Acara</h2>
-      <div class="bg-white shadow-lg rounded-2xl p-8">
+      <h2 class="text-3xl font-bold text-pink-700 mb-8 font-cross" data-aos="zoom-in" data-aos-delay="500" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">Detail Acara</h2>
+      <div class="bg-white shadow-lg rounded-2xl p-8" data-aos="fade-up" data-aos-delay="700" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">
           <h3 class="text-2xl font-semibold mb-4 font-cross">Akad Nikah</h3>
           <p class="text-lg font-bold text-pink-700">Minggu, 3 Oktober 2025 </p>
           <p>Pukul 11:00 WIB - Selesai</p>
@@ -108,32 +112,35 @@
         <div class="my-6 border-t border-gray-300"></div>
           <h3 class="text-2xl font-semibold mb-4 font-cross">Resepsi</h3>
           <p class="text-lg font-bold text-pink-700">Minggu, 3 Oktober 2025 </p>
-          <p>Pukul 11:00 WIB - Selesai<</p>
+          <p>Pukul 11:00 WIB - Selesai</p>
           <p>Dsn. Druju Kec. Pagak Kab. Malang</p>
+
+           <div class="max-w-5xl mx-auto px-4 mt-16">
+              <a href="https://maps.app.goo.gl/pxQT5pbeUWPKpSF87" class="bg-pink-700 px-7 py-3 rounded-full font-bold text-white"><span><i class="ph ph-map-pin"></i></span> Lihat Lokasi</a>
+          </div>
       </div>
+    </div>
+    <div>
+      
     </div>
   </section>
 
   
 
-  <!-- Maps -->
-  <section class="py-16 bg-white" id="lokasi">
-    <div class="max-w-5xl mx-auto px-4 text-center">
-      <h2 class="text-3xl font-bold text-pink-700 mb-8 font-cross">Lokasi</h2>
-      <button class="bg-pink-700 px-7 py-3 rounded-full font-bold text-white"><a href="https://maps.app.goo.gl/pxQT5pbeUWPKpSF87"><span><i class="ph ph-map-pin"></i></span> Lihat Lokasi</a></button>
-    </div>
-  </section>
+ 
 
   <section class="py-16 px-4 bg-pink-50 mb-12">
-    <div class="flex flex-col items-center">
-      <p class="text-center text-lg md:text-2xl mb-6">Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Bpak/Ibu/Saudara/i berkenan hadir untuk memberikan do'a restu</p>
-      <p class="text-center text-lg md:text-2xl mb-6">Atas kehadiran serta do'a restunya kami mengucapkan terima kasih.</p>
-      <h1 class="text-center text-xl md:text-3xl font-cross text-pink-700 mb-12">Walaikumussalam Wr. Wb.</h1>
-      <h1 class="text-9xl font-cinzel mb-20">I | A</h1>
-    </div>
-    <div class="flex flex-col items-center">
-      <p class="text-gray-600">Dibuat dengan ❤️ dan penuh senang hati oleh</p>
-      <p>@nuxztech | @nuxzstore.apkpremium</p>
+    <div class="flex flex-col items-center bg-white shadow-lg rounded-2xl p-8" data-aos="fade-up" data-aos-delay="700" data-aos-duration="1500" data-aos-anchor-placement="top-bottom">
+      <p class="text-center text-lg md:text-2xl mb-16">Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Bpak/Ibu/Saudara/i berkenan hadir untuk memberikan do'a restu</p>
+      <p class="text-center text-lg md:text-2xl mb-16">Atas kehadiran serta do'a restunya kami mengucapkan terima kasih.</p>
+      <h1 class="text-center text-xl md:text-3xl font-cross text-pink-700 mb-16">Walaikumussalam Wr. Wb.</h1>
+      <p class="text-center text-2xl md:text-2xl mb-12">Kami Yang Berbahagia</p>
+      <h2 class="text-5xl mb-48 md:text-7xl font-semibold text-gray-900 font-script">Iha & Rafi</h2>
+      <h1 class="text-7xl font-cinzel mb-52">I | A</h1>
+      <div class="flex flex-col items-center">
+        <p class="text-gray-600 text-center">Dibuat dengan ❤️ dan penuh senang hati oleh</p>
+        <p>@nuxztech | @nuxzstore.apkpremium</p>
+      </div>
     </div>
   </section>
 
