@@ -20,3 +20,16 @@
       document.getElementById("countdown").innerHTML = "Acara Telah Berlangsung";
     }
   }, 1000);
+
+  const btnFilter = document.querySelectorAll("nav div a");
+
+
+btnFilter.forEach(data => {
+    data.onclick = () => {
+        btnFilter.forEach(data => {
+         data.classList.remove("text-pink-600");   
+        });
+         data.classList.toggle("text-pink-600");
+
+    };
+});
