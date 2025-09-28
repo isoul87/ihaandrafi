@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- font alexbrush -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="icon" type="image/png" href="src/img/—Pngtree—heart love pink hearts shape_3585972.png">
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,7 +24,7 @@
   <title>Undangan Pernikahan</title>
   <link rel="stylesheet" href="/src/output.css">
 </head>
-<body class="bg-gradient-to-b from-pink-50 to-white text-gray-800 font-sans">
+<body class="bg-gradient-to-b from-pink-50 to-white text-gray-800 font-sans ">
 
 <nav class="fixed bottom-0 left-0 right-0 bg-white shadow-[0_-2px_10px_rgba(0,0,0,0.1)] z-50" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1000">
   <div class="flex justify-around max-w-xl mx-auto">
@@ -64,6 +65,9 @@
       <a href="#acara" class="mt-8 px-6 py-3 bg-pink-600 font-bold text-white rounded-full shadow-lg hover:bg-pink-700 transition">Lihat Detail Acara</a>
     </div>
     
+    <div class="mt-12" data-aos="fade-up" data-aos-delay="1500" data-aos-duration="1000">
+      <h1>Waktu Mundur ke hari pernikahan</h1>
+    </div>
     <div id="countdown" class="bg-white/20 backdrop-blur-md rounded-3xl p-6 md:p-8 flex justify-center gap-7 md:gap-8 mt-6 text-xl shadow-lg border border-white/30" data-aos="fade-up" data-aos-delay="1500" data-aos-duration="1000">
     <div><span id="days" class="font-bold text-3xl">00</span><br>Hari</div>
     <div><span id="hours" class="font-bold text-3xl">00</span><br>Jam</div>
@@ -107,13 +111,14 @@
       <div class="bg-white shadow-lg rounded-2xl p-8" data-aos="fade-up" data-aos-delay="700" data-aos-duration="1500" data-aos-anchor-placement="bottom-bottom">
           <h3 class="text-2xl font-semibold mb-4 font-cross">Akad Nikah</h3>
           <p class="text-lg font-bold text-pink-700">Minggu, 3 Oktober 2025 </p>
-          <p>Pukul 11:00 WIB - Selesai</p>
-          <p>Dsn. Druju Kec. Pagak Kab. Malang</p>
+          <p>Pukul 13:00 WIB - Selesai</p>
+          <p>Dsn. Druju Rt. 36 Rw. 09 Ds. Tlogorejo Kec. Pagak Kab. Malang</p>
         <div class="my-6 border-t border-gray-300"></div>
           <h3 class="text-2xl font-semibold mb-4 font-cross">Resepsi</h3>
           <p class="text-lg font-bold text-pink-700">Minggu, 3 Oktober 2025 </p>
-          <p>Pukul 11:00 WIB - Selesai</p>
-          <p>Dsn. Druju Kec. Pagak Kab. Malang</p>
+          <p>Pukul 13:00 WIB - Selesai</p>
+          <p>Dsn. Druju Rt. 36 Rw. 09 Ds. Tlogorejo Kec. Pagak Kab. Malang
+</p>
 
            <div class="max-w-5xl mx-auto px-4 mt-16">
               <a href="https://maps.app.goo.gl/pxQT5pbeUWPKpSF87" class="bg-pink-700 px-7 py-3 rounded-full font-bold text-white"><span><i class="ph ph-map-pin"></i></span> Lihat Lokasi</a>
@@ -129,7 +134,7 @@
 
  
 
-  <section class="py-16 px-4 bg-pink-50 mb-12">
+  <section id="rsvp" class="py-16 px-4 bg-pink-50 mb-12">
     <div class="flex flex-col items-center bg-white shadow-lg rounded-2xl p-8" data-aos="fade-up" data-aos-delay="700" data-aos-duration="1500" data-aos-anchor-placement="top-bottom">
       <p class="text-center text-lg md:text-2xl mb-16">Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Bpak/Ibu/Saudara/i berkenan hadir untuk memberikan do'a restu</p>
       <p class="text-center text-lg md:text-2xl mb-16">Atas kehadiran serta do'a restunya kami mengucapkan terima kasih.</p>
@@ -139,10 +144,25 @@
       <h1 class="text-7xl font-cinzel mb-52">I | A</h1>
       <div class="flex flex-col items-center">
         <p class="text-gray-600 text-center">Dibuat dengan ❤️ dan penuh senang hati oleh</p>
-        <p>@nuxztech | @nuxzstore.apkpremium</p>
+        <a href="https://www.instagram.com/nuxztech/" class="hover:text-pink-300 transition-all duration-500">@nuxztech | @nuxzstore.apkpremium</a>
       </div>
     </div>
   </section>
+
+  
+    <audio id="background-music" loop autoplay>
+        <source src="src/music/Amazing Grace _yoona. Lirik dan terjemahan (sub indo) - Jaera.mp3" type="audio/mp3">
+        Browser Anda tidak mendukung elemen audio.
+    </audio>
+
+     <button id="sound-toggle" class="fixed bottom-20 right-5 w-14 h-14 bg-gray-800 rounded-full flex items-center justify-center shadow-lg cursor-pointer transition-all duration-200 hover:bg-gray-700 active:scale-95">
+        <div id="sound-on-icon">
+            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20"><path d="M10 3.167a.833.833 0 00-.833.833v12a.833.833 0 101.666 0V4a.833.833 0 00-.833-.833zM4.167 7.5a.833.833 0 00-.834.833v3.334a.833.833 0 101.667 0V8.333a.833.833 0 00-.833-.833zm11.666 0a.833.833 0 00-.833.833v3.334a.833.833 0 101.666 0V8.333a.833.833 0 00-.833-.833z"/></svg>
+        </div>
+        <div id="sound-off-icon" class="hidden">
+            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM7.293 7.293a1 1 0 011.414 0L10 8.586l1.293-1.293a1 1 0 111.414 1.414L11.414 10l1.293 1.293a1 1 0 01-1.414 1.414L10 11.414l-1.293 1.293a1 1 0 01-1.414-1.414L8.586 10 7.293 8.707a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+        </div>
+    </button>
 
 
   <script src="dist/main.js"></script>

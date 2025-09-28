@@ -35,3 +35,42 @@ btnFilter.forEach(data => {
 
     };
 });
+
+// Tombol music
+
+// --- LOGIKA JAVASCRIPT ---
+        const music = document.getElementById('background-music');
+        const toggleButton = document.getElementById('sound-toggle');
+        const soundOnIcon = document.getElementById('sound-on-icon');
+        const soundOffIcon = document.getElementById('sound-off-icon');
+
+        // Browser modern sering memblokir autoplay sampai pengguna berinteraksi
+        // Fungsi ini akan mencoba memutar musik saat pengguna mengklik di mana saja
+        function playMusicOnFirstInteraction() {
+            // Cek jika musik belum pernah dimulai
+            if (music.paused) {
+                music.play().catch(error => {
+                    console.log("Autoplay dicegah oleh browser. Musik akan dimulai saat tombol diklik.");
+                });
+            }
+            // Hapus event listener ini setelah dijalankan sekali
+            document.body.removeEventListener('click', playMusicOnFirstInteraction);
+        }
+        
+        document.body.addEventListener('click', playMusicOnFirstInteraction);
+
+
+        // Fungsi untuk mematikan/menyalakan suara
+        function toggleSound() {
+            if (music.muted) {
+                music.muted = false;
+                soundOnIcon.classList.remove('hidden');
+                soundOffIcon.classList.add('hidden');
+            } else {
+                music.muted = true;
+                soundOnIcon.classList.add('hidden');
+                soundOffIcon.classList.remove('hidden');
+            }
+        }
+
+        toggleButton.addEventListener('click', toggleSound);
